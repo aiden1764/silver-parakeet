@@ -1,0 +1,16 @@
+﻿# 上游版本标记
+
+本文件记录 upstream/ 与 skills/ 快照来源，供 update.ps1 做版本比对。
+
+repo   = DietrichGebert/ponytail
+branch = main
+commit = 9b58c1ffb790c075ca32e70a89cf1d80588f4abf
+date   = 2026-10-10T04:19:52Z
+synced = 2026-10-11
+
+## 说明
+
+- upstream/skills/ 是上游原文快照，不做任何修改。仅用于比对与留档。
+- skills/ 是实际安装到 DSH 的版本，正常情况下与 upstream/skills/ 逐字节一致。
+- 上游发布新版本后，update.ps1 会比对 commit 并拉取，两者会一起更新。
+- 若两个目录出现差异，说明本仓库对 skill 做过本地修改，请在 README 中记录原因。
